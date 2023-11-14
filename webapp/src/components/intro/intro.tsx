@@ -26,7 +26,6 @@ const Intro: FC<IntroProps> = ({
   githubLink,
   profileImg,
 }) => {
-  console.log("profileImg: ", profileImg);
   return (
     <section className="mb-28 max-w-[50rem]">
       <div className="flex items-center justify-center">
