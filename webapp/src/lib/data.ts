@@ -6,7 +6,12 @@ import corpcommentImg from "@/assets/corpcomment.png";
 import rmtdevImg from "@/assets/rmtdev.png";
 import wordanalyticsImg from "@/assets/wordanalytics.png";
 
-export const links = [
+interface LinkData {
+  hash: string;
+  name: string;
+}
+
+export const links: LinkData[] = [
   {
     name: "Home",
     hash: "#home",
@@ -31,7 +36,7 @@ export const links = [
     name: "Contact",
     hash: "#contact",
   },
-] as const;
+];
 
 export const experiencesData = [
   {

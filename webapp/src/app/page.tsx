@@ -1,10 +1,20 @@
-import Intro from "@/components/intro";
-import Image from "next/image";
+import Divider from "@/components/divider/divider";
+import Intro from "@/components/intro/intro";
 
-export default function Home() {
+const Home = () => {
   return (
-    <main className="">
-      <Intro />
+    <main className="flex flex-col items-center px-4">
+      <Intro
+        name="Ninad Bhoir"
+        description="a dynamic and results-driven software developer with expertise in JavaScript, React, and Nodejs. I am passionate about crafting innovative solutions and pushing technology boundaries."
+        contactLink="#contact"
+        cvLink="/CV.pdf"
+        linkedinLink="https://www.linkedin.com/in/ninad-bhoir-981a74169/"
+        githubLink="https://github.com/ninad-2022"
+      />
+      <Divider />
     </main>
   );
-}
+};
+
+export default Home;
