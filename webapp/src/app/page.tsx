@@ -1,5 +1,6 @@
 import Divider from "@/components/divider/divider";
 import Intro from "@/components/intro/intro";
+import profile from "@/assets/profile.jpg";
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         cvLink="/CV.pdf"
         linkedinLink="https://www.linkedin.com/in/ninad-bhoir-981a74169/"
         githubLink="https://github.com/ninad-2022"
+        profileImg={profile}
       />
       <Divider />
     </main>
