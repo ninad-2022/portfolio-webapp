@@ -1,6 +1,7 @@
 import Divider from "@/components/divider/divider";
 import Intro from "@/components/intro/intro";
 import profile from "@/assets/profile.jpg";
+import About from "@/components/about/about";
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
         profileImg={profile}
       />
       <Divider />
+      <About />
     </main>
   );
 };

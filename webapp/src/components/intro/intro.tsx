@@ -67,7 +67,7 @@ const Intro: FC<IntroProps> = ({
         animate={{ opacity: 1, y: 0 }}
         className="mt-4 mb-10 px-4 text-2xl font-light !leading-[1.5]"
       >
-        <span className="font-bold">{`Hello, I am ${name}`}</span>
+        <span className="font-bold">{`Hello, I'm ${name},`}</span>
         {` ${description}`}
       </motion.p>
       <motion.div
