@@ -1,9 +1,12 @@
 import React from "react";
+import Heading from "@/components/heading/heading";
 
 const About = () => {
   return (
-    <section>
-      <h2 className="text-3-xl font-medium capitalize mb-8">About me</h2>
+    <section className="mb-28 max-w-[45rem] text-center leading-8">
+      <h2 className="text-3-xl font-medium capitalize mb-8 sm:mb-40">
+        <Heading>About you</Heading>
+      </h2>
       <p className="mb-3">
         After graduating with a degree in
         <span className="font-medium">Accounting</span>, I decided to pursue my

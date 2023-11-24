@@ -1,13 +1,13 @@
 "use client";
 import Image from "next/image";
-import React, { FC, Validator } from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import PropTypes from "prop-types";
-interface IntroProps {
+
+type IntroProps = {
   name: string;
   description: string;
   contactLink: string;
@@ -111,16 +111,6 @@ const Intro: FC<IntroProps> = ({
       </motion.div>
     </section>
   );
-};
-
-Intro.propTypes = {
-  name: PropTypes.string.isRequired,
-  description: PropTypes.string.isRequired,
-  contactLink: PropTypes.string.isRequired,
-  cvLink: PropTypes.string.isRequired,
-  linkedinLink: PropTypes.string.isRequired,
-  profileImg: PropTypes.object.isRequired,
-  githubLink: PropTypes.string.isRequired,
 };
 
 export default Intro;

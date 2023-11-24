@@ -1,15 +1,14 @@
 "use client";
-import React, { CSSProperties, FC, Validator } from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import PropTypes from "prop-types";
 
-interface LinkData {
+type LinkData = {
   hash: string;
   name: string;
 }
 
-interface HeaderPros {
+type HeaderPros = {
   links: LinkData[];
   headerClasses?: string;
   navStyles?: string;
@@ -52,18 +51,6 @@ const Header: FC<HeaderPros> = ({
       </nav>
     </header>
   );
-};
-
-Header.propTypes = {
-  links: PropTypes.arrayOf(
-    PropTypes.shape({
-      hash: PropTypes.string.isRequired,
-      name: PropTypes.string.isRequired,
-    })
-  ).isRequired as Validator<LinkData[]>,
-  headerClasses: PropTypes.string as Validator<string>,
-  navStyles: PropTypes.string as Validator<string>,
-  linkStyles: PropTypes.string as Validator<string>,
 };
 
 export default Header;

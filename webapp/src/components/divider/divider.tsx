@@ -1,9 +1,8 @@
 "use client";
 import { motion } from "framer-motion";
-import React, { FC, Validator } from "react";
-import PropTypes from "prop-types";
+import React, { FC } from "react";
 
-interface DividerProps {
+type DividerProps = {
   classNames?: string;
 }
 const Divider: FC<DividerProps> = ({ classNames }) => {
@@ -16,9 +15,4 @@ const Divider: FC<DividerProps> = ({ classNames }) => {
     ></motion.div>
   );
 };
-
-Divider.propTypes = {
-  classNames: PropTypes.string as Validator<string>,
-};
-
 export default Divider;
