@@ -2,6 +2,7 @@ import Divider from "@/components/divider/divider";
 import Intro from "@/components/intro/intro";
 import profile from "@/assets/profile.jpg";
 import About from "@/components/about/about";
+import Projects from "@/components/project/projects";
 
 const Home = () => {
   return (
@@ -17,6 +18,7 @@ const Home = () => {
       />
       <Divider />
       <About />
+      <Projects/>
     </main>
   );
 };

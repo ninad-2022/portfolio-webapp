@@ -6,10 +6,10 @@ import corpcommentImg from "@/assets/corpcomment.png";
 import rmtdevImg from "@/assets/rmtdev.png";
 import wordanalyticsImg from "@/assets/wordanalytics.png";
 
-interface LinkData {
+type LinkData = {
   hash: string;
   name: string;
-}
+};
 
 export const links: LinkData[] = [
   {
@@ -67,24 +67,43 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    id: 1,
     title: "CorpComment",
     description:
       "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+    tags: [
+      { name: "React", id: 1 },
+      { name: "Next.js", id: 2 },
+      { name: "MongoDB", id: 3 },
+      { name: "Tailwind", id: 4 },
+      { name: "Prisma", id: 5 },
+    ],
     imageUrl: corpcommentImg,
   },
   {
+    id: 2,
     title: "rmtDev",
     description:
       "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+    tags: [
+      { name: "React", id: 1 },
+      { name: "Redux", id: 6 },
+      { name: "Sql", id: 7 },
+      { name: "Mssql", id: 8 },
+      { name: "nodejs", id: 9 },
+    ],
     imageUrl: rmtdevImg,
   },
   {
+    id: 3,
     title: "Word Analytics",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+    tags: [
+      { name: "Redux", id: 6 },
+      { name: "Sql", id: 7 },
+      { name: "nodejs", id: 9 },
+    ],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
