@@ -28,7 +28,7 @@ type ProjectsProps = {
 
 const Projects: FC<ProjectsProps> = ({ heading, projectsData }) => {
   return (
-    <section>
+    <section id="projects" className="scroll-mt-28">
       <Heading>{heading}</Heading>
       <div>
         {Array.isArray(projectsData) &&

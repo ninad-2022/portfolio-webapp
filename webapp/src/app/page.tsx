@@ -7,7 +7,7 @@ import { projectsData } from "@/lib/data";
 
 const Home = () => {
     return (
-    <main className="flex flex-col items-center px-4">
+    <main id="home" className="flex flex-col items-center px-4 scroll-mt-28">
       <Intro
         name="Ninad Bhoir"
         description="a dynamic and results-driven software developer with expertise in JavaScript, React, and Nodejs. I am passionate about crafting innovative solutions and pushing technology boundaries."
