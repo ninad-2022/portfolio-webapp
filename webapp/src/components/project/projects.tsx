@@ -1,18 +1,40 @@
 import React, { FC, Fragment } from "react";
 import Heading from "@/components/heading/heading";
-import { projectsData } from "@/lib/data";
-import Project from "@/components/project/project";
+import ProjectList from "@/components/project/projectList";
 
-type ProjectsProps = {};
+type Tag = {
+  id: number;
+  name: string;
+};
 
-const Projects: FC<ProjectsProps> = () => {
+type ProjectData = {
+  id: number;
+  title: string;
+  description: string;
+  tags: readonly Tag[];
+  imageUrl: {
+    src: string;
+    height: number;
+    width: number;
+    blurDataURL: string;
+    blurWidth: number;
+    blurHeight: number;
+  };
+};
+type ProjectsProps = {
+  heading: string;
+  projectsData: ProjectData;
+};
+
+const Projects: FC<ProjectsProps> = ({ heading, projectsData }) => {
   return (
     <section>
-      <Heading>My Projects</Heading>
+      <Heading>{heading}</Heading>
       <div>
-        {Array.isArray(projectsData) && projectsData.map((project) => (
+        {Array.isArray(projectsData) &&
+          projectsData.map((project) => (
             <Fragment key={project.id}>
-              <Project {...project} />
+              <ProjectList {...project} />
             </Fragment>
           ))}
       </div>

@@ -3,9 +3,10 @@ import Intro from "@/components/intro/intro";
 import profile from "@/assets/profile.jpg";
 import About from "@/components/about/about";
 import Projects from "@/components/project/projects";
+import { projectsData } from "@/lib/data";
 
 const Home = () => {
-  return (
+    return (
     <main className="flex flex-col items-center px-4">
       <Intro
         name="Ninad Bhoir"
@@ -18,7 +19,7 @@ const Home = () => {
       />
       <Divider />
       <About />
-      <Projects/>
+      <Projects heading="My Projects" projectsData={projectsData}/>
     </main>
   );
 };
