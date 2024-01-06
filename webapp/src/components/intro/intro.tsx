@@ -4,10 +4,9 @@ import { motion } from "framer-motion";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
-import { useInView } from "react-intersection-observer";
 import Link from "next/link";
 import Image from "next/image";
-import { useActiveSectionContext } from "@/hooks/useActiveSectionContext";
+import useActiveInView from "@/hooks/useActiveInView";
 
 type IntroProps = {
   name: string;
@@ -28,12 +27,7 @@ const Intro: FC<IntroProps> = ({
   githubLink,
   profileImg,
 }) => {
-  const { ref, inView } = useInView({ threshold: 0.5 });
-  const { setActiveSection } = useActiveSectionContext();
-
-  useEffect(() => {
-    if (inView) setActiveSection("Home");
-  }, [inView, setActiveSection]);
+  const { ref } = useActiveInView("Home");
   return (
     <section ref={ref} className="mb-28 max-w-[50rem]" >
       <div className="flex items-center justify-center">
