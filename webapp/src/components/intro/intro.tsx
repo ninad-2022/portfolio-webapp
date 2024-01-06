@@ -1,11 +1,13 @@
 "use client";
-import Image from "next/image";
-import React, { FC } from "react";
+import React, { FC, useEffect } from "react";
 import { motion } from "framer-motion";
-import Link from "next/link";
 import { BsArrowRight, BsLinkedin } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
+import { useInView } from "react-intersection-observer";
+import Link from "next/link";
+import Image from "next/image";
+import { useActiveSectionContext } from "@/hooks/useActiveSectionContext";
 
 type IntroProps = {
   name: string;
@@ -15,7 +17,7 @@ type IntroProps = {
   linkedinLink: string;
   githubLink: string;
   profileImg: object;
-}
+};
 
 const Intro: FC<IntroProps> = ({
   name,
@@ -26,8 +28,14 @@ const Intro: FC<IntroProps> = ({
   githubLink,
   profileImg,
 }) => {
+  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) setActiveSection("Home");
+  }, [inView, setActiveSection]);
   return (
-    <section className="mb-28 max-w-[50rem]">
+    <section ref={ref} className="mb-28 max-w-[50rem]" >
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div

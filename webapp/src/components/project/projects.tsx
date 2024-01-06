@@ -1,6 +1,9 @@
-import React, { FC, Fragment } from "react";
+"use client";
+import React, { FC, Fragment, useEffect } from "react";
 import Heading from "@/components/heading/heading";
 import ProjectList from "@/components/project/projectList";
+import { useActiveSectionContext } from "@/hooks/useActiveSectionContext";
+import { useInView } from "react-intersection-observer";
 
 type Tag = {
   id: number;
@@ -27,8 +30,14 @@ type ProjectsProps = {
 };
 
 const Projects: FC<ProjectsProps> = ({ heading, projectsData }) => {
+  const { ref, inView } = useInView({ threshold: 0.5 });
+  const { setActiveSection } = useActiveSectionContext();
+
+  useEffect(() => {
+    if (inView) setActiveSection("Projects");
+  }, [inView, setActiveSection]);
   return (
-    <section id="projects" className="scroll-mt-28">
+    <section ref={ref} id="projects" className="scroll-mt-3">
       <Heading>{heading}</Heading>
       <div>
         {Array.isArray(projectsData) &&

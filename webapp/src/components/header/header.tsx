@@ -1,8 +1,9 @@
 "use client";
-import React, { FC, useState } from "react";
+import React, { FC } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import clsx from "clsx";
+import { useActiveSectionContext } from "@/hooks/useActiveSectionContext";
 
 type LinkData = {
   hash: string;
@@ -22,7 +23,12 @@ const Header: FC<HeaderPros> = ({
   navStyles,
   linkStyles,
 }) => {
-  const [activeSection, setActiveSection] = useState("Home");
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
+  const handleLinkClick = (name: string) => () => {
+    setActiveSection(name);
+    setTimeOfLastClick(Date.now());
+  };
   return (
     <header className={`z-[999] relative ${headerClasses}`}>
       <motion.div
@@ -48,7 +54,7 @@ const Header: FC<HeaderPros> = ({
                   linkStyles
                 )}
                 href={hash}
-                onClick={() => setActiveSection(name)}
+                onClick={handleLinkClick(name)}
               >
                 {name}
                 {name === activeSection && (
