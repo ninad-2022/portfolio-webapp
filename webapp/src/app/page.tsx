@@ -4,6 +4,7 @@ import profile from "@/assets/profile.jpg";
 import About from "@/components/about/about";
 import Projects from "@/components/project/projects";
 import { projectsData } from "@/lib/data";
+import Skills from "@/components/skills/skills";
 
 const Home = () => {
     return (
@@ -20,6 +21,7 @@ const Home = () => {
       <Divider />
       <About />
       <Projects heading="My Projects" projectsData={projectsData}/>
+      <Skills/>
     </main>
   );
 };
