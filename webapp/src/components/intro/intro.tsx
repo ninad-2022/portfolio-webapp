@@ -27,9 +27,9 @@ const Intro: FC<IntroProps> = ({
   githubLink,
   profileImg,
 }) => {
-  const { ref } = useActiveInView("Home");
+  const { ref } = useActiveInView({ SectionName: "Home", threshold: 0.5 });
   return (
-    <section ref={ref} className="mb-28 max-w-[50rem]" >
+    <section ref={ref} className="mb-28 max-w-[50rem]">
       <div className="flex items-center justify-center">
         <div className="relative">
           <motion.div

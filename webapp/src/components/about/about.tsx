@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import useActiveInView from "@/hooks/useActiveInView";
 
 const About = () => {
-  const { ref } = useActiveInView("About");
+  const { ref } = useActiveInView({ SectionName: "About",threshold:0.75 });
 
   return (
     <motion.div
