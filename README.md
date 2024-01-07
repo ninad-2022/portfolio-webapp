@@ -1,4 +1,4 @@
-# Portfolio Website
+# Portfolio Website 😎
 
 Welcome to my portfolio! This website showcases my skills, projects, and experience as a Full Stack Developer specializing in the MERN (MongoDB, Express.js, React.js, Node.js) and SQL stack.
 
@@ -20,14 +20,13 @@ I am a passionate and detail-oriented Full Stack Developer with expertise in bui
 
 ## Projects
 
-### Project 1: [Project Name 1](#)
-Description of the project goes here. Highlight key features and technologies used.
+### Project 1: [A2A_v2](#)
+- An educational ERP from automates the process from admission to alumni.
+- Develop Admission and Examination modules frontend
 
-### Project 2: [Project Name 2](#)
-Description of the project goes here. Highlight key features and technologies used.
-
-### Project 3: [Project Name 3](#)
-Description of the project goes here. Highlight key features and technologies used.
+### Project 2: [IRS NAVGATH](#)
+- A Marine software for granting contract review to surveyors/auditors from IRCLASS
+- Working on company client login, BSA and RPS modules
 
 ## Skills
 
@@ -56,18 +55,18 @@ Description of the project goes here. Highlight key features and technologies us
 
 ## Experience
 
-### [Product Developer] at [MEETCS, pvt ltd]
+### [Product Developer](#) at [MEETCS, pvt ltd](#)
 - Developed Admission, examination module for A2A_v2 (educational ERP).
 
-### [Jr Reactjs Developer] at [Quolam Business Solutions, pvt ltd]
-- Working on  BSA, RPS, Client logins modules for IRS Navgath Application
+### [Jr Reactjs Developer](#) at [Quolam Business Solutions, pvt ltd](#)
+- Working on  BSA, RPS, and Client logins modules for IRS Navgath Application
 
 ## Contact
 
 Feel free to reach out to me! I am open to collaboration and new opportunities.
 
 - Email: ninadbhoir010@gmail.com
-- LinkedIn: [https://www.linkedin.com/in/ninad-bhoir-981a74169/](#)
-- GitHub: [https://github.com/ninad-2022](#)
+- LinkedIn: [Click here](https://www.linkedin.com/in/ninad-bhoir-981a74169/)
+- GitHub: [Click here](https://github.com/ninad-2022)
 
 Thank you for visiting my portfolio! 🚀
