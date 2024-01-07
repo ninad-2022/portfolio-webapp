@@ -20,7 +20,7 @@ I am a passionate and detail-oriented Full Stack Developer with expertise in bui
 
 ## Projects
 
-### Project 1: [A2A_v2](#)
+### Project 1: A2A_v2
 - An educational ERP from automates the process from admission to alumni.
 - Develop Admission and Examination modules frontend
 
