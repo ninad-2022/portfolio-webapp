@@ -24,7 +24,7 @@ I am a passionate and detail-oriented Full Stack Developer with expertise in bui
 - An educational ERP from automates the process from admission to alumni.
 - Develop Admission and Examination modules frontend
 
-### Project 2: [IRS NAVGATH](#)
+### Project 2: [IRS NAVGATH](https://ors-dev.quolam.com/)
 - A Marine software for granting contract review to surveyors/auditors from IRCLASS
 - Working on company client login, BSA and RPS modules
 
