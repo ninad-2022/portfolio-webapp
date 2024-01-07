@@ -1,4 +1,4 @@
-# Portfolio Website 😎
+# Portfolio Website in NextJS 😎
 
 Welcome to my portfolio! This website showcases my skills, projects, and experience as a Full Stack Developer specializing in the MERN (MongoDB, Express.js, React.js, Node.js) and SQL stack.
 
