@@ -5,6 +5,8 @@ import About from "@/components/about/about";
 import Projects from "@/components/project/projects";
 import { projectsData } from "@/lib/data";
 import Skills from "@/components/skills/skills";
+import Experience from "@/components/experience/experience";
+import Contact from "@/components/contact/contact";
 
 const Home = () => {
     return (
@@ -22,6 +24,8 @@ const Home = () => {
       <About />
       <Projects heading="My Projects" projectsData={projectsData}/>
       <Skills/>
+      <Experience/>
+      <Contact/>
     </main>
   );
 };

@@ -12,7 +12,7 @@ const Skills = () => {
     <section ref={ref} id="skills">
       <Heading>My Skills</Heading>
       <div className="flex gap-4 md:gap-8 w-[100%] md:px-60 md:justify-center flex-wrap">
-        {skillsData.map(({ id, imageUrl, title }, i) => (
+        {skillsData.map(({ id, imageUrl, title }) => (
           <Fragment key={id}>
             <Image
               src={imageUrl}
